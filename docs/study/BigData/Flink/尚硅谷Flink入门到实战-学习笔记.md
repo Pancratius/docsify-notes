@@ -50,7 +50,7 @@ pom依赖
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <flink.version>1.14.3</flink.version>
+        <flink.version>1.13.6</flink.version>
         <java.binary.version>2.12</scala.binary.version>
     </properties>
 
@@ -63,6 +63,11 @@ pom依赖
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_${java.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_${java.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
     </dependencies>
